@@ -75,7 +75,7 @@ public class ModelCraps {
     private void rondaPunto() {
         if (tiro == punto){
             estado = 4;
-            flag=0
+            flag=0;
         }
         if (tiro == 7){
             estado = 5;
@@ -101,12 +101,12 @@ public class ModelCraps {
                     break;
             case 2: estadoToString= "Sacaste Craps, has perdido.";
                 break;
-            case 3: estadoToString= "Estableciste Punto en "+ punto + "debes seguir lanzando. " +
-                    "\nPero si sacas 7 antes que "+ punto + "oerderás.";
+            case 3: estadoToString= "Estableciste Punto en "+ punto + " debes seguir lanzando. " +
+                    "\nPero si sacas 7 antes que "+ punto + " perderás.";
                 break;
             case 4: estadoToString= "¡¡Sacaste "+ punto + " nuevamente, has ganado!!";
                 break;
-            case 5: estadoToString= "Sacaste 7 antes que"+ punto + "has perdido.";
+            case 5: estadoToString= "Sacaste 7 antes que "+ punto + " has perdido.";
                 break;
         }
         return estadoToString;
